@@ -359,7 +359,7 @@ impl<'a> Iterator for Attributes<'a> {
                 return Some(Ok(Attribute {
                     key: &self.bytes[$key],
                     value: Cow::Borrowed(&self.bytes[$val]),
-                }));
+                }))
             };
         }
 
